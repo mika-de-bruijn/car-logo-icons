@@ -1,0 +1,1 @@
+function setIcons(){const e="cli-";document.querySelectorAll("[class*=cli-]").forEach((s=>{const t=filterClassNames(s.classList,e);s.setAttribute("style","-webkit-mask-image: url('../icons/"+t+".svg');")}))}function filterClassNames(e,s){let t;return e.forEach((e=>{e.includes(s)&&(t=e.replace(s,""))})),t}window.addEventListener("DOMContentLoaded",(()=>{setIcons()}));
